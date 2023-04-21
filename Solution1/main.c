@@ -6,7 +6,6 @@
  */
 
 #include "STD_TYPES.h"
-#include <util/delay.h>
 
 #define DDRA	*((volatile u8*) 0x3A)
 #define PORTA	*((volatile u8*) 0x3B)
@@ -60,6 +59,8 @@ int main(void)
 			PORTA &= ~(1<<0) & ~(1<<1);
 		}
 	}
+
+	return 0;
 }
 
 
